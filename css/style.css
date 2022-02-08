@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 144rem;
   margin: 8rem auto;
   background-color: var(--grey-color-light-2);
   box-shadow: var(--shadow-dark);
@@ -373,6 +373,9 @@ body {
 
 .user-reviews {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .paragraph:not(:last-of-type) {
@@ -493,4 +496,13 @@ body {
   font-family: sans-serif;
   line-height: 1;
   z-index: 1;
+}
+
+.btn-inline span {
+  margin-left: 0.3rem;
+  transition: margin-left 0.2s;
+}
+
+.btn-inline:hover span {
+  margin-left: 0.8rem;
 }
