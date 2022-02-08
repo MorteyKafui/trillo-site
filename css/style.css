@@ -77,7 +77,6 @@ body {
 .hotel-view {
   background-color: #fff;
   flex: 1;
-  height: 80rem;
 }
 
 .logo {
@@ -364,13 +363,77 @@ body {
 }
 
 .description {
-  flex: 0 0 60%;
+  flex: 0 0 70%;
   margin-right: 4.5rem;
   background-color: #fff;
   padding: 3rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  font-size: 1.6rem;
 }
 
 .user-reviews {
   flex: 1;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 1rem;
+}
+
+.list__item::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  background-image: url(../img/chevron-thin-right.svg);
+  background-size: cover;
+
+  /* background-color: var(--primary-color);
+  --webkit-mask-image: url(../img/chevron-thin-right.svg);
+  --webkit-mask-size: cover;
+  mask-image: url(../img/chevron-thin-right.svg);
+  mask-size: cover; */
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--grey-color-dark-3);
+
+  display: flex;
+  align-items: center;
+}
+
+.recommend__photo {
+  box-sizing: content-box;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
+}
+
+.recommend__count {
+  margin-right: auto;
+}
+
+.recommend__friends {
 }
